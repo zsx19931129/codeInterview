@@ -12,16 +12,6 @@ struct TreeLinkNode {
 */
 class Solution {
 public:
-	TreeLinkNode* findFirstLeftFather(TreeLinkNode* pNode){
-		if(!pNode){
-			return NULL;
-		}
-		if(pNode->next && pNode->next->left == pNode){
-			return pNode->next;
-		}else{
-			return findFirstLeftFather(pNode->next);
-		}
-	}
     TreeLinkNode* GetNext(TreeLinkNode* pNode)
     {
     	if(!pNode){
@@ -34,10 +24,13 @@ public:
         		curNode = curNode->left;
         	}
         	return curNode;
-        }else if(pNode->next && pNode->next->left == pNode){
-        	return pNode->next;
-        }else if(pNode->next && pNode->next->right == pNode){
-        	return findFirstLeftFather(pNode->next);
+        }else if(pNode->next){
+        	TreeLinkNode* curNode = pNode;
+        	while(curNode->next && curNode->next->left != curNode){
+        		curNode = curNode->next;
+        	}
+
+        	return curNode->next;
         }else{
         	return NULL;
         }
