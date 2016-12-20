@@ -1,3 +1,5 @@
+# 给你一个graph每一个node都是一个facebook的user，然后找出这个user的两度关系以内所有和他last name一样的人的email address
+
 class FacebookUser(object):
 	def __init__(self, uid, firstname, lastname, email):
 		self.uid = uid
