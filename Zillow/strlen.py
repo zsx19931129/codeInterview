@@ -1,3 +1,4 @@
+# Problem Description, calculate strlen, do not use length library function directly
 def strlen(s, idx):
 	try:
 		s[idx]
