@@ -1,0 +1,17 @@
+1. Question: A solution consists of four balls from a set of four different colors. The user tries to guess the solution.
+If they guess the right color for the right spot, record it as being in the correct 'Location'. If it's the right color, but the wrong spot, record it as a correct 'Color'. For example: if the solution is 'BGRR' and the user guesses 'RGYY' they have 1 'Location' and 1 'Color'. A correct solution would be 4 'Location' and 0 'Color'.
+
+https://www.careercup.com/question?id=3037
+
+2. How would you discover a memory leak in a software product that contains thousands of lines?
+
+3. Given a 2^31 x 2^31 tic tac toe board, describe how you would store the state of the game to check if there is a winner.
+
+https://www.careercup.com/question?id=4871704801181696
+
+4. Implement a class to provide in real-time the list of the top 100 most viewed 
+
+https://www.careercup.com/question?id=4908484506157056
+
+
+
