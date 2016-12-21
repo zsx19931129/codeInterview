@@ -10,11 +10,14 @@ class ICard(object):
 		return ICard.name_value[self.name]
 
 def score(cardlist):
-	int score = 0
+	score = 0
+	has_ace = False
 	for card in cardlist:
 		score += card.get_value()
+		if card.get_value() == 1:
+			has_ace = True
 
-	if score < 21:
+	if score < 21 and has_ace:
 		return score+10 if score+10<=21 else score
 	else:
 		return score
